@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * ─── DESIGN TOKENS ──────────────────────────────────────────────────────────────
+ * Snapdeal Influencer Hub visual direction:
+ *   - Primary (warm red accent): #E54040
+ *   - Background (off-white): #FAFAF9
+ *   - Foreground (charcoal): #1C1917
+ *   - Muted (stone tones) for secondary surfaces
+ *   - Radius: 0.5rem default (slightly rounded, professional)
+ *   - Shadows: subtle warm-toned shadows
+ */
+
+:root {
+  /* Brand colors */
+  --color-primary: #E54040;
+  --color-primary-foreground: #FFFFFF;
+
+  /* Surfaces */
+  --background: #FAFAF9;
+  --foreground: #1C1917;
+  --card: #FFFFFF;
+  --card-foreground: #1C1917;
+  --popover: #FFFFFF;
+  --popover-foreground: #1C1917;
+
+  /* Secondary / muted */
+  --secondary: #F5F5F4;
+  --secondary-foreground: #292524;
+  --muted: #F5F5F4;
+  --muted-foreground: #78716C;
+
+  /* Accent (hover highlights) */
+  --accent: #FEF2F2;
+  --accent-foreground: #991B1B;
+
+  /* Destructive */
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+
+  /* Borders & inputs */
+  --border: #E7E5E4;
+  --input: #E7E5E4;
+  --ring: #E54040;
+
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Sidebar (authenticated chrome) */
+  --sidebar-background: #FFFFFF;
+  --sidebar-foreground: #1C1917;
+  --sidebar-border: #E7E5E4;
+  --sidebar-accent: #FEF2F2;
+  --sidebar-accent-foreground: #991B1B;
+  --sidebar-ring: #E54040;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar-background: var(--sidebar-background);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/*
+ * ─── BASE STYLES ────────────────────────────────────────────────────────────────
+ */
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 1rem; /* 16px minimum body text */
+  line-height: 1.5;
+}
+
+/* Prevent iOS zoom on input focus — ensure inputs are 16px on mobile */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Neutralize browser autofill background colour */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--background) inset !important;
+  -webkit-text-fill-color: var(--foreground) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Safe area support for bottom nav on notch devices */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

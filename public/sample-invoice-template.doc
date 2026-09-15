@@ -1,0 +1,140 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="utf-8">
+<title>Invoice Template</title>
+<style>
+body { font-family: Calibri, Arial, sans-serif; margin: 40px 60px; color: #333; }
+h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 5px; }
+.subtitle { font-size: 14px; color: #666; margin-bottom: 30px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+th, td { padding: 8px 12px; text-align: left; border: 1px solid #ddd; font-size: 13px; }
+th { background-color: #f5f5f5; font-weight: bold; }
+.section-title { font-size: 16px; font-weight: bold; margin-top: 25px; margin-bottom: 10px; color: #1a1a1a; border-bottom: 2px solid #333; padding-bottom: 5px; }
+.field-label { color: #666; font-size: 12px; }
+.field-value { font-size: 14px; font-weight: bold; color: #e60000; }
+.total-row td { font-weight: bold; font-size: 15px; background-color: #f9f9f9; }
+.footer { margin-top: 40px; font-size: 11px; color: #999; border-top: 1px solid #ddd; padding-top: 15px; }
+.placeholder { color: #e60000; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>INVOICE</h1>
+<p class="subtitle">Snapdeal Influencer Hub — Invoice Template</p>
+
+<table>
+<tr>
+<td style="width:50%; border:none; vertical-align:top;">
+<p class="field-label">From (Influencer):</p>
+<p class="placeholder">[Your Full Name]</p>
+<p class="placeholder">[Your Address Line 1]</p>
+<p class="placeholder">[City, State, PIN Code]</p>
+<p class="placeholder">[Mobile: +91 XXXXXXXXXX]</p>
+<p class="placeholder">[Email: your@email.com]</p>
+<p class="placeholder">[PAN: XXXXX0000X]</p>
+</td>
+<td style="width:50%; border:none; vertical-align:top;">
+<p class="field-label">To:</p>
+<p><b>Snapdeal Limited</b></p>
+<p>Plot No. 5, Sector 20</p>
+<p>Udyog Vihar, Phase-I</p>
+<p>Gurugram, Haryana 122016</p>
+<p>GSTIN: 06AABCS1429B1ZK</p>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td style="width:50%; border:none;">
+<p class="field-label">Invoice Number:</p>
+<p class="placeholder">[INV-YYYY-XXX]</p>
+</td>
+<td style="width:50%; border:none;">
+<p class="field-label">Invoice Date:</p>
+<p class="placeholder">[DD/MM/YYYY]</p>
+</td>
+</tr>
+<tr>
+<td style="border:none;">
+<p class="field-label">Influencer ID:</p>
+<p class="placeholder">[SIF0000000]</p>
+</td>
+<td style="border:none;">
+<p class="field-label">Payment Terms:</p>
+<p class="placeholder">[As per agreement]</p>
+</td>
+</tr>
+</table>
+
+<p class="section-title">Description of Services</p>
+
+<table>
+<tr>
+<th style="width:10%;">#</th>
+<th style="width:50%;">Description</th>
+<th style="width:20%;">YouTube Video Link</th>
+<th style="width:20%;">Amount (INR)</th>
+</tr>
+<tr>
+<td>1</td>
+<td class="placeholder">[e.g. Product review video — Snapdeal Summer Collection 2026]</td>
+<td class="placeholder">[https://youtube.com/watch?v=...]</td>
+<td class="placeholder">[₹XX,XXX]</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="placeholder">[e.g. Instagram Reel — Unboxing and first impressions]</td>
+<td class="placeholder">[https://youtube.com/watch?v=...]</td>
+<td class="placeholder">[₹XX,XXX]</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="placeholder">[Add more rows as needed]</td>
+<td class="placeholder">[Link]</td>
+<td class="placeholder">[₹XX,XXX]</td>
+</tr>
+<tr class="total-row">
+<td colspan="3" style="text-align:right;">Total Amount</td>
+<td class="placeholder">[₹XX,XXX]</td>
+</tr>
+</table>
+
+<p class="section-title">Bank Details for Payment</p>
+
+<table>
+<tr><td style="width:40%;" class="field-label">Account Holder Name</td><td class="placeholder">[Your Name as per Bank]</td></tr>
+<tr><td class="field-label">Account Number</td><td class="placeholder">[XXXXXXXXXXXX]</td></tr>
+<tr><td class="field-label">IFSC Code</td><td class="placeholder">[XXXX0XXXXXX]</td></tr>
+<tr><td class="field-label">Bank Name &amp; Branch</td><td class="placeholder">[Bank Name, Branch]</td></tr>
+</table>
+
+<p class="section-title">Declaration</p>
+<p style="font-size:12px;">
+I hereby declare that the services described above have been rendered as agreed, and this invoice is true and correct to the best of my knowledge. I understand that TDS will be deducted as applicable under Indian tax law.
+</p>
+
+<br><br>
+<table style="border:none;">
+<tr>
+<td style="width:50%; border:none;">
+<p class="field-label">Signature:</p>
+<br><br>
+<p>_________________________</p>
+<p class="placeholder">[Your Full Name]</p>
+<p class="placeholder">[Date: DD/MM/YYYY]</p>
+</td>
+<td style="width:50%; border:none;">
+</td>
+</tr>
+</table>
+
+<div class="footer">
+<p><b>Instructions:</b> Fill in all fields marked in <span style="color:#e60000;">red</span>. Save this document as a PDF before uploading to the Snapdeal Influencer Hub portal. Ensure the invoice number is unique and matches what you enter on the submission form.</p>
+<p>This is a template provided by Snapdeal Influencer Hub for your convenience. Modify as needed to match your business requirements.</p>
+</div>
+
+</body>
+</html>

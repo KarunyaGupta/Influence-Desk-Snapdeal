@@ -1,0 +1,7 @@
+"use client";
+
+import { InfluencerDetailsPage } from "@/components/layout/influencer-details-page";
+
+export default function FmInfluencerDetailsPage() {
+  return <InfluencerDetailsPage />;
+}
